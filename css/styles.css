@@ -1,0 +1,27 @@
+.link-studio {
+    color: black;
+}
+.nav-link {
+    color: black;
+}
+.nav-link:hover,
+.nav-link:focus {
+    color: #2196F3;
+
+}
+.herou-button,
+.main-button {
+    color: #212121;
+    background-color: F5F4FA;
+}
+
+.herou-button:hover,
+.herou-button:focus {
+    color: #FFFFFF;
+    background-color: #2196F3;
+}
+.main-button:focus,
+.main-button:hover {
+    color: #FFFFFF;
+    background-color: #2196F3;
+}
