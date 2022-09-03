@@ -1,14 +1,55 @@
-.link-studio {
-    color: black;
+body {
+    color: #757575;
+    background-color: #FFFFFF;
 }
-.nav-link {
-    color: black;
+.list {
+    list-style: none;
 }
-.nav-link:hover,
-.nav-link:focus {
-    color: #2196F3;
+/*-цвет основного текста h - #212121*/
+/*-цвет h1 -белый #FFFFFF-*/
+/*-цвет secondary текста р #757575-*/
+/*-цвет  асцент текста-blue #2196F3*/
 
+/*-цвет  background: #F5F5F5; */
+/*-цвет  footera background: #2F303A; або rgba(47, 48, 58, 1)*/
+/*-цвет background вторичний F5F4FA*/
+
+
+.logo {
+    color: black;
+    text-decoration: none;
 }
+.logo:hover,
+.logo:focus {
+    color: #2196F3;
+}
+.logo-web {
+    color: #2196F3;
+}
+
+/*nav-list */
+
+.site-nav .link {
+    color: #212121;
+    text-decoration: none;
+}
+  
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: #2196F3;
+}
+
+ /* Hero- Section  */
+ .hero-title {
+    color: #FFFFFF;
+ }
+
+/* sectoin особливості */
+.section-title {
+    color: #212121;;
+}
+
+
 .herou-button,
 .main-button {
     color: #212121;
