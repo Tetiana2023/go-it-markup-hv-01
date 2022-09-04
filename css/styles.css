@@ -6,27 +6,38 @@
 /*-цвет  background: #F5F5F5; */
 /*-цвет  footera background: #2F303A; або rgba(47, 48, 58, 1)*/
 /*-цвет background вторичний F5F4FA*/
+/* -цвет button при ховері фокусі ектів #188CE8 */
+/* -цвет tel в footer rgba(255, 255, 255, 0.6);*/
 
 :root {
     --primery-text-color: #757575;
     --title-text-color: #212121;
     --accent-color: #2196F3;
+    --accent-button-color: #188CE8;
     --primery-bg-color: #FFFFFF;
     --secondary-bg-color: #F5F4FA;
+    --hero-section-bg-color: #2F303A;
+    --logo-color: #000000;
+    --footer-tel-mail-color: rgba(255, 255, 255, 0.6);
+
 }
 
 body {
     color: var(--primery-text-color);
     background-color: var(--primery-bg-color);
+    font-family: Roboto; sans-serif;
+    letter-spacing: 0.03em;
 }
 .list {
     list-style: none;
 }
 
-
-
 .logo {
-    color: black;
+    color:  var(--logo-color);
+    font-family: 'Raleway'; sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
     text-decoration: none;
 }
 .logo:hover,
@@ -36,11 +47,24 @@ body {
 .logo-web {
     color: var(--accent-color)
 }
+.logo-studio {
+    color: var(--primery-bg-color);
+}
+.logo-studio:hover,
+.logo-studio:focus {
+    color: var(--accent-color);
+}
+
+
 
 /*nav-list */
 
 .site-nav .link {
     color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: 0.02em;
     text-decoration: none;
 }
   
@@ -48,35 +72,117 @@ body {
 .site-nav .link:focus {
     color:  var(--accent-color)
 }
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+.mail {
+    color: var(--primery-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+.mail:focus,
+.mail:hover {
+    color: var(--accent-color);
+}
+.tel {
+    color: var(--primery-text-color);
+    text-decoration: none;
+}
+.tel:focus,
+.tel:hover {
+    color: var(--accent-color);
+}
 
  /* Hero- Section  */
  .hero-section {
-    background-color: #2F303A;
+    background-color: var(--hero-section-bg-color);
  }
  .hero-title {
-    color: #FFFFFF;
+    color: var(--primery-bg-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
  }
-.hero-button,
-.main-button {
-    color: #FFFFFF;
-    background-color: #2196F3;
+
+ /* Button */
+.button {
+    color: var(--primery-bg-color);
+    background-color: var(--accent-color);
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
 }
 
+.hero-button {
+    color: var(--primery-bg-color);
+    background-color: var(--accent-color);
+}
 .hero-button:hover,
 .hero-button:focus {
-    color: #FFFFFF;
-    background-color: #2196F3;
+    color: var(--primery-bg-color);
+    background-color: var(--accent-button-color);
 }
-    
+.hero-button:active {
+    color: var(--primery-bg-color);
+    background-color: var(--accent-button-color);
+} 
+
+.main-button {
+    color: var(--title-text-color);
+    background-color: var(--secondary-bg-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    letter-spacing: 0.03em;
+}
+
+.main-button:hover,
+.main-button:focus {
+    color: var(--primery-bg-color);
+    background-color: var(--accent-color);
+}
+
+.main-button:active {
+    color: var(--primery-bg-color);
+    background-color: var(--accent-color);
+}
     
 
 /* sectoin features */
 .section-title {
     color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
 }
 /*  Features */
 .features-list .title {
-    color: var(--title-text-color);
+    color: var(--title-text-color);  
+}
+.features-list {
+    list-style: none;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+.text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
 }
 
 /* section Taem */
@@ -84,24 +190,18 @@ body {
     color: var(--title-text-color);
 }
 
-
-/* Button */
-
-.hero-button {
-    color: #FFFFFF;
-    background-color: var(--accent-color);
-}
-
-
-
-.main-button {
-    color: #212121;
+.section-team {
     background-color: var(--secondary-bg-color);
 }
-
-.main-button:focus,
-.main-button:hover {
-    color: #FFFFFF;
-    background-color: #2196F3;
+.team-list-color {
+    background-color: var(--primery-bg-color);
+    list-style: none;
+}
+/* Fotter */
+.foter {
+    background-color: var(--hero-section-bg-color);
 }
 
+.logo-studio {
+    color: var(--primery-bg-color);
+}
